@@ -5,17 +5,13 @@ body {
     transition: all 250ms ease;
 }
 
-body::-webkit-scrollbar { 
-    display: none; 
-}
-
 
 /* Body Header */
 
 #body-header {
     height: 70vh;
-    opacity: 0.8;
-    background-image: url(images/women3.jpg);
+    opacity: 0.9;
+    background-image: url("https://res.cloudinary.com/people-matters/image/upload/q_auto,f_auto/v1585931855/1585931853.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -27,21 +23,22 @@ body::-webkit-scrollbar {
 /* Horizontal Lists */
 
 .bars{
-    color: white;
+    color: white; 
     margin: 0;
     margin-right: 5%;
     display: none;
 }
 
 .bars i {
-    font-size: 2rem;
+    font-size: 0.4rem;
+    font-family:'Gill Sans';
 }
 
 .dropdown-list{
     margin: 0;
     display: none;
     background-color: #828470;
-    box-shadow: 0px 4px 8px 1px #535547;
+    box-shadow: 4px 3px 10px 1px #535547;
 }
 
 .dropdown-list ul{
@@ -70,8 +67,11 @@ body::-webkit-scrollbar {
 }
 
 .no-list-style li a{
+    font-family: 'Gill Sans';
     list-style: none;
-    color: white;
+    color: black;
+    background-color: #d7e4df;
+    font-size: 25px;
     text-decoration: none;
 }
 
@@ -91,7 +91,7 @@ body::-webkit-scrollbar {
 }
 
 .nav-menu li a:hover {
-    color: lightgrey;
+    color: red;
     border-bottom: 1px solid black;
 }
 
@@ -102,11 +102,13 @@ body::-webkit-scrollbar {
     padding:16px;
     margin-top: 10vh;
 }
-
+.sticky + .content {
+    padding-top: 60px;
+  }
 #my-name {
-    font-size: 3rem;
+    font-size: 6rem;
     letter-spacing: 0.1rem;
-    color: white;
+    color: whitesmoke;
     font-weight: 700;
     margin-bottom: 0.3 rem;
 }
@@ -133,26 +135,26 @@ section {
 }
 
 section:nth-child(2n) {
-    background-color: #9e9b9b29;
+    background-color: rgb(241, 183, 183);
 }
 
 section:nth-child(2n + 1) {
-    background-color: white;
+    background-color: rgb(224, 209, 185);
 }
 
 .section-heading {
     width: auto;
     padding: 20px 10px 10px;
-    font-weight: 400;
+    font-size: 40px;
 
 }
 
 .section-heading span {
-    color:#fc2a7b;
+    color:slategray;
     display: inline-block;
-    padding-top: 10px;
+    padding-top: 20px;
     margin-right: 0.5rem;
-    font-size: 62px;
+    font-size: 80px;
 
 }
 
@@ -183,12 +185,12 @@ section:nth-child(2n + 1) {
 }
 
 #my-para {
-    padding: 10px;
+    padding: 20px;
     width: 70%;
     text-align: justify;
-    color: grey;
+    color: darkred;
     line-height: 28px;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     margin: auto;
 }
 
@@ -225,54 +227,29 @@ section:nth-child(2n + 1) {
 .skill-name a {
     color: white;
     text-decoration: none;
-    font-size: 0.6em ;
+    font-size: 1.2em ;
     vertical-align: middle;
 
 }
 
 
 
-/* Work Experience */
-
-.timeline {
-    position: relative;
-    width: 75%;
-}
+/*helpline */
 
 .timeline-box {
-    padding: 5px;
-    width: 40%;
+    padding: 20px;
+    width: 50%;
     min-height: 150px;
     position: relative;
     left: 5%;
-    text-align: right;
+    font-family: 'Gill Sans';
 }
 
-.timeline-box::after {
-    content: '';
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    background-color: lightgrey;
-    top: 25%;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-.timeline-box:nth-child(2n) {
-    left: 53%;
-}
-
-.timeline-box:nth-child(2n+1)::after {
-    right: -11.8%;
-}
-
-.timeline-box:nth-child(2n)::after {
-    left: -9%;
-}
 
 .timeline-container {
-    padding: 8px;
+    padding: 3px;
+    text-align: center;
+    font-size: 50px;
 }
 
 .timeline-logo {
@@ -281,60 +258,39 @@ section:nth-child(2n + 1) {
     overflow: hidden;
 }
 
-.timeline-logo > img {
+.timeline-logo  img {
     width: 100%;
+    border-radius: 50%;
 }
 
-#timeline-divider {
-    position: absolute;
-    width: 0;
-    top: 10%;
-    left: 50%;
-    border: 1px dashed #ff8cc26b;
-    height: 66%;
-    color: #433E3F;
-}
 
-#timeline-divider .timeline-traveller {
-    position: sticky;
-    top: 135px;
-    z-index: 2;
-}
-
-#timeline-divider i {
-    transform: rotate(90deg);
-    margin-top: -35px;
-    display: block;
-    color:#fc2a7b;
-    
-}
 
 .top-heading  {
-    font-size: 1.2rem;
+    font-size: 2.0rem;
 }
 
 .place-name {
     margin: 5px 0 0;
-    color: #eb822d;
+    color: #86817b;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .experience-duration {
     color: #9e9b9b;
-    font-weight: 100;
-    color: grey;
+    font-size: larger;
+    font-family:'Gill Sans';
+    color: rgb(66, 65, 65);
     font-size: 1rem;
+    text-align: center;
 }
 
 .experience-description {
-    font-size: 14px;
+    font-size: 20px;
     padding: 2px;
-    color: grey;
+    color: rgb(77, 71, 71);
     line-height: 20px;
 }
-
-
 
 
 
@@ -343,7 +299,6 @@ section:nth-child(2n + 1) {
 
 #portfolio-container {
     box-sizing: border-box;
-
     display: flex;
     flex-wrap: wrap;
     padding: 0 50px;
@@ -354,18 +309,21 @@ section:nth-child(2n + 1) {
 .portfolio-image-container {
 
     max-width: 320px;
-    width: 240px;
-    height: 240px;
+    width: 400px;
+    height: 340px;
     overflow: hidden;
-    margin: 30px;
+    margin: 10px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 
+
 .portfolio-image-container img {
     width: 100%;
     height: 100%;
+    border-radius: 7px;
+    
 }
 
 
@@ -376,22 +334,21 @@ section:nth-child(2n + 1) {
     left: 0;
     height: 100%;
     color: transparent;
-    text-align: center;
-    padding: 10px;
+    text-align: bottom;
+    padding: 20px;
 }
 
 .portfolio-image-container:hover {
-    box-shadow: 0 0 20px #74ADC8;
+    box-shadow: 0 0 20px rgb(211, 192, 158);
     cursor: pointer
 }
 
 .portfolio-image-container:hover .portfolio-details {
-    background-color: #80808078;
-    color: white;
+    background-color: rgb(233, 221, 200);
+    color: black;
 ;
 }
 .portfolio-details p{
-    transform: translateY(156px);
     text-decoration: none;
 
 }
@@ -433,47 +390,13 @@ section:nth-child(2n + 1) {
 /*common color classes */
 
 .text-highlight {
-    color: #f83b22;
-    font-weight: 600;
+    color: salmon;
+    font-weight: 700;
 
 }
-
-
-/* setting background-color */
 
 .m-blue {
     color:#fc2a7b;
-}
-
-.mb-blue {
-    background-color: #2857a4;
-}
-
-.mb-orange {
-    background-color: #ec4d1c;
-}
-
-.mb-teal {
-    background-color: #0b8176;
-}
-
-.mb-light-purple {
-    background-color: #93738c;
-}
-.color1{
-    background-color: pink;
-}
-.color2{
-    background-color: peachpuff;
-}
-.color3{
-    background-color: sandybrown;
-}
-.color4{
-    background-color: lightgreen;
-}
-.color5{
-    background-color: lightskyblue;
 }
 
 
@@ -495,10 +418,4 @@ section:nth-child(2n + 1) {
     height: inherit;
     width: 10%;
 }
-
-
-
-
-
-
 
