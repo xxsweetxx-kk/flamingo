@@ -1,0 +1,558 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+    transition: all 250ms ease;
+}
+
+
+/* Body Header */
+
+#body-header {
+    height: 70vh;
+    opacity: 0.9;
+    background-image: url("https://res.cloudinary.com/people-matters/image/upload/q_auto,f_auto/v1585931855/1585931853.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+
+
+/* Horizontal Lists */
+
+.bars{
+    color: white; 
+    margin: 0;
+    margin-right: 5%;
+    display: none;
+}
+
+.bars i {
+    font-size: 0.4rem;
+    font-family:'Gill Sans';
+}
+
+.dropdown-list{
+    margin: 0;
+    display: none;
+    background-color: #828470;
+    box-shadow: 4px 3px 10px 1px #535547;
+}
+
+.dropdown-list ul{
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+}
+
+.dropdown-menu:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    right: 3%;
+}
+
+.dropdown-list li{
+    margin: 0.4rem 0px;
+}
+
+.no-list-style{
+    list-style: none;
+}
+
+.no-list-style li {
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.no-list-style li a{
+    font-family: 'Gill Sans';
+    list-style: none;
+    color: black;
+    background-color: #d7e4df;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.horizontal-list {
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+}
+
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: red;
+    border-bottom: 1px solid black;
+}
+
+
+/* Name and Social Icons*/
+
+#name-social-container {
+    padding:16px;
+    margin-top: 10vh;
+}
+.sticky + .content {
+    padding-top: 60px;
+  }
+#my-name {
+    font-size: 6rem;
+    letter-spacing: 0.1rem;
+    color: whitesmoke;
+    font-weight: 700;
+    margin-bottom: 0.3 rem;
+}
+
+.social-icons li a i {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+
+
+/*Section Classes*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+section:nth-child(2n) {
+    background-color: rgb(241, 183, 183);
+}
+
+section:nth-child(2n + 1) {
+    background-color: rgb(224, 209, 185);
+}
+
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-size: 40px;
+
+}
+
+.section-heading span {
+    color:slategray;
+    display: inline-block;
+    padding-top: 20px;
+    margin-right: 0.5rem;
+    font-size: 80px;
+
+}
+
+
+
+/*About Section*/
+
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#my-image {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+#my-para {
+    padding: 20px;
+    width: 70%;
+    text-align: justify;
+    color: darkred;
+    line-height: 28px;
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+
+
+/*Skills Section*/
+
+.skills-display {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skill-progress {
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.skill-progress > div {
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em ;
+    vertical-align: middle;
+
+}
+
+
+
+/*helpline */
+
+.timeline-box {
+    padding: 20px;
+    width: 50%;
+    min-height: 150px;
+    position: relative;
+    left: 5%;
+    font-family: 'Gill Sans';
+}
+
+
+.timeline-container {
+    padding: 3px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.timeline-logo {
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+}
+
+.timeline-logo  img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+
+.top-heading  {
+    font-size: 2.0rem;
+}
+
+.place-name {
+    margin: 5px 0 0;
+    color: #fffdfb;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-size: larger;
+    font-family:'Gill Sans';
+    color: rgb(66, 65, 65);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.experience-description {
+    font-size: 20px;
+    padding: 2px;
+    color: rgb(65, 49, 49);
+    line-height: 20px;
+}
+
+
+
+
+
+
+/* Portfolio Section */
+
+#portfolio-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.portfolio-image-container {
+
+    max-width: 320px;
+    width: 400px;
+    height: 340px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    
+}
+
+
+.portfolio-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: bottom;
+    padding: 20px;
+}
+
+.portfolio-image-container:hover {
+    box-shadow: 0 0 20px rgb(211, 192, 158);
+    cursor: pointer
+}
+
+.portfolio-image-container:hover .portfolio-details {
+    background-color: rgb(233, 221, 200);
+    color: black;
+;
+}
+.portfolio-details p{
+    text-decoration: none;
+
+}
+.portfolio-details a{
+    text-decoration: none;
+    
+
+}
+/* Common Text Align Classes */
+
+.text-right{
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/* Common Margin Classes */
+
+.m0 {
+    margin: 0;
+}
+
+.mb75px {
+    margin-bottom: 75px;
+}
+
+.mb50px {
+    margin-bottom: 50px;
+}
+
+
+
+/*common color classes */
+
+.text-highlight {
+    color: salmon;
+    font-weight: 700;
+
+}
+
+
+/* setting background-color */
+
+.m-blue {
+    color:#fc2a7b;
+}
+
+.mb-blue {
+    background-color: #2857a4;
+}
+
+.mb-orange {
+    background-color: rgb(179, 179, 94);
+}
+
+.mb-teal {
+    background-color: #59afa7;
+}
+
+.mb-light-purple {
+    background-color: #93738c;
+}
+.color1{
+    background-color: pink;
+}
+.color2{
+    background-color: peachpuff;
+}
+.color3{
+    background-color: sandybrown;
+}
+.color4{
+    background-color: lightgreen;
+}
+.color5{
+    background-color: rgb(112, 175, 214);
+}
+
+
+/*Percentage Classes */
+
+
+
+.hundred-percent {
+    height: inherit;
+    width: 100%;
+}
+
+.fifty-percent {
+    height: inherit;
+    width: 50%;
+}
+
+.ten-percent{
+    height: inherit;
+    width: 10%;
+}
+
+
+@media only screen and (max-width: 572px) {
+    
+    .timeline-box {
+        width: 100%;
+        left: 10% !important;
+    }
+    .timeline-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(68, 67, 67);
+    top: 25%;
+    border-radius: 50%;
+}
+
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after {
+    right: -11.8%;
+}
+
+.timeline-box:nth-child(2n)::after {
+    left: -9%;
+}
+
+#timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 135px;
+}
+#timeline-divider {
+    position: absolute;
+    width: 0;
+    top: 10%;
+    left: 50%;
+    border: 1px dashed #ff8cc26b;
+    height: 80%;
+    color: #433E3F;
+}
+
+
+
+#timeline-divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: block;
+    color:#fc2a7b;
+    
+}
+
+    .bars {
+        display: block;
+    }
+    
+    
+    .nav-menu {
+        display: none;
+    } 
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+    .timeline-box {
+        width: 90%;
+        left: 10% !important;
+    }
+
+    .timeline-box::after {
+        left: -9.3% !important;
+    }
+
+    #timeline-divider {
+        top: 10%;
+        left: 2%;
+    }
+
+    #contact-form {
+        margin-left: 0%;
+    }
+
+    #contact-container {
+        flex-wrap: wrap;
+    }
+
+    #my-details-container {
+        width: 80%;
+        margin: 10%;
+    }
+
+    #contact-form-container {
+        width: 80%;
+        margin: 10%;
+    }
+
+}
